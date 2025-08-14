@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Calculator Made by Chirag</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <div class="top-bar">
+      <select id="mode">
+        <option value="standard">Standard</option>
+        <option value="scientific">Scientific</option>
+      </select>
+    </div>
+
+    <div class="calculator glass">
+      <input type="text" id="display" disabled placeholder="0" />
+      <div class="buttons">
+        <button class="btn sci" data-value="Math.sin(">sin</button>
+        <button class="btn sci" data-value="Math.cos(">cos</button>
+        <button class="btn sci" data-value="Math.sqrt(">√</button>
+        <button class="btn sci" data-value="Math.log10(">log</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn operator" data-value="/">÷</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn operator" data-value="*">×</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn operator" data-value="-">−</button>
+
+        <button class="btn" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn equal" data-value="=">=</button>
+        <button class="btn operator" data-value="+">+</button>
+
+        <button class="btn clear" data-value="C">C</button>
+      </div>
+    </div>
+
+    <div class="history glass" id="history">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
